@@ -1,0 +1,46 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Team A"/>
+
+    <TextView
+        android:id="@+id/score_team_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/home_btn1_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:layout_marginBottom="20dp"
+        android:background="#E4572E"
+        />
+    <Button
+        android:id="@+id/home_btn2_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:layout_marginBottom="20dp"
+        android:background="#E4572E"
+        />
+    <Button
+        android:id="@+id/home_btn3_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:layout_marginBottom="20dp"
+        android:background="#E4572E"
+        />
+</LinearLayout>
