@@ -64,7 +64,4 @@ public class HomeActivity extends AppCompatActivity {
         scoreTeamB.setText(String.valueOf(pointsTeamB=0));
     }
 
-    class Teams {
-        BindView
-    }
 }

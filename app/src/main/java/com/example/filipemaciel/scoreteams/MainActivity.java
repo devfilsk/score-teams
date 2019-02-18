@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean autentication(String usuario, String senha){
+        if(usuario.trim().isEmpty() || senha.trim().isEmpty()){
+            Toast.makeText(this, "Digita aí, animal dê têtas!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         if(usuario.equals("filipe") && senha.equals("bonitao")){
             return true;
         }else{

@@ -19,6 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
             >
 
@@ -26,40 +29,123 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
+                android:layout_weight="1">
 
-                <include
-                    android:id="@+id/panel_team_A"
-                    layout="@layout/panel_teams"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Team A"/>
+
+                    <TextView
+                        android:id="@+id/score_team_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="80sp"
+                        android:text="9"/>
+
+                    <Button
+                        android:id="@+id/home_btn1_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+3 Points"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                    <Button
+                        android:id="@+id/home_btn2_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+2 Points"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                    <Button
+                        android:id="@+id/home_btn3_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Free Throw"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                </LinearLayout>
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-                <include
-                    android:id="@+id/panel_team_A"
-                    layout="@layout/panel_teams"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    />
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Team B"/>
+
+                    <TextView
+                        android:id="@+id/score_team_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="80sp"
+                        android:text="16"/>
+
+                    <Button
+                        android:id="@+id/home_btn1_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+3 Points"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                    <Button
+                        android:id="@+id/home_btn2_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+2 Points"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                    <Button
+                        android:id="@+id/home_btn3_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Free Throw"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E4572E"
+                        />
+                </LinearLayout>
 
 
             </LinearLayout>
 
         </LinearLayout>
+        <!--<view-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#cfcfcf"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_above="@+id/butao"-->
+            <!--/>-->
         <LinearLayout
+            android:id="@+id/butao"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
